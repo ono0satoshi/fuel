@@ -25,4 +25,21 @@ class Controller_Post extends Controller
     $data['rows'] = Model_Post::find_all();
     return View::forge('post/list',$data);
   }
+
+  public function action_form()
+  {
+    return View::forge('post/form');
+  }
+
+  public function action_save()
+  {
+    $form = array();
+    $form['title'] = Input::post('title');
+    $form['summary'] = Input::post('summary');
+    $form['body'] = Input::post('body');
+    $post = Model_Post::forge();
+    $post->set($form);
+    $post->save();
+    Response::redirect('post');
+  }
 }
