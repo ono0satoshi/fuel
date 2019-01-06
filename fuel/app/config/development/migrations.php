@@ -11,6 +11,9 @@ return array(
         2 => '004_create_comments',
         3 => '005_create_categories',
         4 => '006_create_article_category',
+        5 => '007_add_username_to_users',
+        6 => '008_add_last_login_to_users',
+        7 => '009_add_login_hash_to_users',
       ),
     ),
     'module' => 
