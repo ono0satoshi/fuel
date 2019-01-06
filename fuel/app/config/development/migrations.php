@@ -1,19 +1,23 @@
 <?php
-return array (
+return array(
   'version' => 
-  array (
+  array(
     'app' => 
-    array (
+    array(
       'default' => 
-      array (
-        0 => '001_create_todos',
+      array(
+        0 => '002_create_articles',
+        1 => '003_create_users',
+        2 => '004_create_comments',
+        3 => '005_create_categories',
+        4 => '006_create_article_category',
       ),
     ),
     'module' => 
-    array (
+    array(
     ),
     'package' => 
-    array (
+    array(
     ),
   ),
   'folder' => 'migrations/',
